@@ -15,41 +15,97 @@
     <!-- Styles -->
     <style>
         body {
-            font-family: 'Nunito';
+            margin: 0;
+            padding: 0;
         }
 
         .container {
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
             border: 1px solid black;
             border-radius: 16px;
-            width: 640px;
-            height: 640px;
+            width: 80mm;
         }
 
         .title {
             align-self: center;
             font-family: 'Great Vibes', cursive;
-            font-size: 36px;
+            font-size: 28px;
+            margin: 0;
+            margin-top: 32px;
+        }
+
+        .sub-title {
+            align-items: center;
+            font-family: 'Great Vibes', cursive;
+            font-size: 18px;
+            text-align: center;
+            margin: 0;
+            padding-bottom: 24px;
         }
 
         .text {
             font-family: 'Comfortaa', cursive;
+        }
+
+        .input {
+            border: 0px solid black;
+            font-family: 'Comfortaa', cursive;
+        }
+
+        .div-form {
+            padding-bottom: 24px;
+            padding-left: 12px;
+        }
+        .textarea {
+            resize: vertical;
+            width: 72mm;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <p class="title">Danny Lanches<br></p>
-        <label class="text" for="nome">Nome:</label>
-        <label class="text" for="telefone">Telefone:</label>
-        <label class="text" for="pedido">Pedido:</label>
-        <label class="text" for="observacoes">Observações:</label>
-        <div>
-            <label class="text" for="valor">Valor:</label>
-            <label class="text" for="troco">Troco:</label>
-        </div>
+        <p class="title">Danny Lanches</p>
+        <p class="sub-title">Deus em tudo... e muito carinho e dedicação para você</p>
+        <form class="form-column">
+            <div class="div-form">
+                <div>
+                    <label class="text" for="nome">Cliente:</label>
+                    <input class='input'>
+                </div>
+                <div>
+                    <label class="text" for="endereco">Endereço:</label>
+                    <input class='input'>
+                </div>
+                <div>
+                    <label class="text" for="telefone">Telefone:</label>
+                    <input class='input'>
+                </div>
+            </div>
+            <div class="div-form">
+                <label class="text" for="pedido">Pedido:</label>
+                <div>
+                    <textarea rows="5" class="textarea"></textarea>
+                </div>
+                <div>
+                    <label class="text" for="observacoes">Obs   :</label>
+                    <input class="input">
+                </div>
+            </div>
+            <div class="div-form">
+                <div>
+                    <label class="text" for="total">Total:</label>
+                    <input class="input">
+                </div>
+                <div>
+                    <label class="text" for="troco">Troco:</label>
+                    <input class="input">
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 
