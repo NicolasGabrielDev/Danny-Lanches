@@ -24,9 +24,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            border: 1px solid black;
-            border-radius: 16px;
-            width: 80mm;
+            width: 72mm;
         }
 
         .title {
@@ -34,13 +32,12 @@
             font-family: 'Great Vibes', cursive;
             font-size: 28px;
             margin: 0;
-            margin-top: 32px;
         }
 
         .sub-title {
             align-items: center;
             font-family: 'Great Vibes', cursive;
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
             margin: 0;
             padding-bottom: 24px;
@@ -60,8 +57,10 @@
             padding-left: 12px;
         }
         .textarea {
+            border: 0px;
             resize: vertical;
             width: 72mm;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -69,16 +68,16 @@
 <body>
     <div class="container">
         <p class="title">Danny Lanches</p>
-        <p class="sub-title">Deus em tudo... e muito carinho e dedicação para você</p>
+        <p class="sub-title">Deus em tudo... e muito carinho e<br> dedicação para você</p>
         <form class="form-column">
             <div class="div-form">
                 <div>
                     <label class="text" for="nome">Cliente:</label>
                     <input class='input'>
                 </div>
+                <label class="text" for="endereco">Endereço:</label>
                 <div>
-                    <label class="text" for="endereco">Endereço:</label>
-                    <input class='input'>
+                    <textarea rows="2" class="textarea"></textarea>
                 </div>
                 <div>
                     <label class="text" for="telefone">Telefone:</label>
